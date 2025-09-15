@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body, #__next { height: 100%; }
+body { @apply bg-gray-50 text-gray-900 font-body; }
+
+/* Brand utility classes */
+.btn-primary { @apply inline-flex items-center justify-center rounded-md bg-primary-600 text-white px-4 py-2 font-medium shadow-sm hover:bg-primary-700 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2; }
+.btn-secondary { @apply inline-flex items-center justify-center rounded-md bg-accent-600 text-white px-4 py-2 font-medium shadow-sm hover:bg-accent-700 focus:outline-none focus:ring-2 focus:ring-accent-500 focus:ring-offset-2; }
+.btn-outline { @apply inline-flex items-center justify-center rounded-md border border-gray-300 bg-white px-4 py-2 text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2; }
+.card { @apply bg-white rounded-xl shadow-card p-5; }
+.badge { @apply inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium bg-primary-50 text-primary-700; }
+.input { @apply block w-full rounded-md border border-gray-300 px-3 py-2 shadow-sm focus:border-primary-500 focus:ring-primary-500; }
+.select { @apply rounded-md border border-gray-300 px-2 py-2 focus:border-primary-500 focus:ring-primary-500; }
+
+/* Auth gradient background */
+.auth-bg { @apply min-h-screen bg-gradient-to-br from-primary-100 via-white to-accent-100; }
+.hero-bg { @apply bg-hero-gradient; }
+
